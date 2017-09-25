@@ -1,0 +1,6 @@
+# List of source files containing translatable strings.
+# Please keep this list in alphabetic order.
+src/caja-xattr-tags-property-page.c
+src/tags-tree-view.c
+src/ui-utils.c
+[type: gettext/ini]src/libcaja-xattr-tags-property-page.caja-extension.in.in
