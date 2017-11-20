@@ -1,0 +1,51 @@
+# Italian translations for caja-xattrs package.
+# Copyright (C) 2017 THE caja-xattrs'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the caja-xattrs package.
+# Rave it <mate@raveit.de>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: caja-xattrs 1.19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-20 12:08+0100\n"
+"PO-Revision-Date: 2017-11-20 12:22+0100\n"
+"Last-Translator: Rave it <mate@raveit.de>\n"
+"Language-Team: Italian\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Add button
+#: ../src/caja-xattr-tags-property-page.c:235
+msgid "Add Tag"
+msgstr ""
+
+#. Delete button
+#: ../src/caja-xattr-tags-property-page.c:259
+msgid "Delete Selected"
+msgstr ""
+
+#: ../src/caja-xattr-tags-property-page.c:564
+msgid "Loading tags..."
+msgstr ""
+
+#: ../src/caja-xattr-tags-property-page.c:591 ../src/tags-tree-view.c:62
+msgid "Tags"
+msgstr ""
+
+#: ../src/ui-utils.c:78
+#, c-format
+msgid ""
+"Error, cannot add Tag.\n"
+"%s"
+msgstr ""
+
+#: ../src/libcaja-xattr-tags-property-page.caja-extension.in.in.h:1
+msgid "xattr Tags Property Page"
+msgstr ""
+
+#: ../src/libcaja-xattr-tags-property-page.caja-extension.in.in.h:2
+msgid "View and Edit tags stored on xattrs"
+msgstr ""

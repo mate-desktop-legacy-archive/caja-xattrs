@@ -1,8 +1,10 @@
 ACLOCAL_AMFLAGS = -I m4 ${ACLOCAL_FLAGS}
 
-EXTRA_DIST = autogen.sh
+SUBDIRS = \
+	src \
+	po
 
-SUBDIRS = src
+EXTRA_DIST = autogen.sh
 
 # Build ChangeLog from GIT  history
 ChangeLog:

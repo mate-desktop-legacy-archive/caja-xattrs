@@ -4,3 +4,4 @@ src/caja-xattr-tags-property-page.c
 src/tags-tree-view.c
 src/ui-utils.c
 [type: gettext/ini]src/libcaja-xattr-tags-property-page.caja-extension.in.in
+[type: gettext/gsettings]src/org.mate.caja-xattrs-tags-property-page.gschema.xml.in
