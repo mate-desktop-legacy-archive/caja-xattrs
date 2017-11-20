@@ -1,9 +1,9 @@
 # Most of this is stolen from caja-extensions / caja-dropbox
 # Initialization
 
-AC_INIT([caja-xattrs], 0.1.0, [https://github.com/fbarriga/caja-xattrs])
+AC_INIT([caja-xattrs], 1.19.0, [https://github.com/mate-desktop/caja-xattrs])
 
-AM_INIT_AUTOMAKE([1.9 tar-ustar dist-xz foreign no-dist-gzip])
+AM_INIT_AUTOMAKE([1.9 tar-ustar dist-xz foreign no-dist-gzip check-news])
 
 AC_CONFIG_MACRO_DIR([m4])
 AC_PREFIX_DEFAULT(/usr)
