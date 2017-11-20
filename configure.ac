@@ -57,18 +57,15 @@ AC_ARG_WITH(caja-extension-dir,
 					[specify the caja extension directory])])
 
 # Get caja extensions directory
-AC_MSG_CHECKING([for caja extension directory])
-if test -n "$with_caja_extension_dir"; then
-	CAJA_EXTENSION_DIR=$with_caja_extension_dir
-else
-	CAJA_EXTENSION_DIR=`$PKG_CONFIG --variable=extensiondir libcaja-extension`
+AC_ARG_WITH(cajadir,
+    AS_HELP_STRING([--with-cajadir=DIR],[Installation path for Caja extension @<:@auto@:>@]),
+    [ac_with_cajadir=$withval],
+    [ac_with_cajadir=""])
+if test "${ac_with_cajadir}" = ""; then
+    ac_with_cajadir=`$PKG_CONFIG --variable=extensiondir libcaja-extension`
 fi
-if test -z "$CAJA_EXTENSION_DIR"; then
-	CAJA_EXTENSION_DIR='${exec_prefix}/lib/caja/extensions-2.0'
-fi
-
-AC_MSG_RESULT([${CAJA_EXTENSION_DIR}])
-AC_SUBST(CAJA_EXTENSION_DIR)
+AC_MSG_NOTICE([Installing caja plugins in ${ac_with_cajadir}])
+AC_SUBST([CAJA_EXTENSION_DIR],[${ac_with_cajadir}])
 
 CAJA_VERSION=`$PKG_CONFIG --modversion libcaja-extension`
 if test -n "$CAJA_VERSION"; then
