@@ -54,7 +54,7 @@ set_cursor (GtkWidget *widget, const gchar *name)
   if (cursor) {
     GdkWindow *window = gtk_widget_get_window (toplevel);
     if (window == NULL ) {
-      g_debug ("set_cursor: cannot set cursor, window not found.\n");
+      g_debug ("set_cursor: Cannot set cursor, window not found.\n");
     } else {
       gdk_window_set_cursor (GDK_WINDOW (window), cursor);
     }
@@ -75,7 +75,7 @@ display_error_dialog (GtkWidget *page, gchar *message)
                                 GTK_DIALOG_DESTROY_WITH_PARENT,
                                 GTK_MESSAGE_ERROR,
                                 GTK_BUTTONS_OK,
-                                _("Error, cannot add Tag.\n%s"), message);
+                                _("Error, cannot add tag.\n%s"), message);
 
   g_signal_connect (G_OBJECT (err_dialog),
                     "response",
